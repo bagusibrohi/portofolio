@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af', // Blue-800
+                        secondary: '#3b82f6', // Blue-500
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold text-primary">Portofolio<span class="text-secondary">.</span></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-secondary transition">Tentang</a>
+                    <a href="#experience" class="hover:text-secondary transition">Organisasi & Acara</a>
+                    <a href="#projects" class="hover:text-secondary transition">Proyek IT</a>
+                    <a href="#contact" class="hover:text-secondary transition">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <h2 class="text-sm font-semibold text-secondary tracking-wider uppercase mb-2">Pendidik & IT Enthusiast</h2>
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-6">
+                    Membangun Generasi Digital & <span class="text-primary">Inovasi Sekolah.</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Halo, saya Muhammad Bagus Ibrohim. Seorang Guru Informatika. Saya memadukan dedikasi mengajar di kelas dengan kemampuan teknis untuk menciptakan ekosistem pendidikan yang lebih efisien dan modern.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#projects" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-900 transition text-center">Lihat Karya Saya</a>
+                    <a href="#contact" class="border-2 border-slate-200 px-6 py-3 rounded-lg font-medium hover:border-secondary hover:text-secondary transition text-center">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 bg-slate-200 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img src="https://drive.google.com/file/d/1I3m_dmbctGxsV9G_2Hzf5u9g4iOKseCf/view?usp=drive_link" alt="Foto Profil Guru" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Keahlian & Fokus</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto mt-4 rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-slate-50 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-primary rounded-lg flex items-center justify-center mb-4 text-xl font-bold">&lt;/&gt;</div>
+                    <h3 class="text-xl font-semibold mb-2">Pengembangan Web</h3>
+                    <p class="text-slate-600">Berpengalaman membangun sistem administrasi sekolah menggunakan PHP, CodeIgniter, Tailwind CSS, dan database MySQL.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-primary rounded-lg flex items-center justify-center mb-4 text-xl font-bold">🏫</div>
+                    <h3 class="text-xl font-semibold mb-2">Teknologi Pendidikan</h3>
+                    <p class="text-slate-600">Manajemen infrastruktur e-learning, optimalisasi server VPS, dan pengelolaan Sistem Ujian Berbasis Komputer (CBT).</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-primary rounded-lg flex items-center justify-center mb-4 text-xl font-bold">👥</div>
+                    <h3 class="text-xl font-semibold mb-2">Manajemen Organisasi</h3>
+                    <p class="text-slate-600">Keterampilan kepemimpinan yang teruji dalam organisasi kemasyarakatan dan publikasi digital, dan kolaborasi tim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Rekam Jejak Organisasi & Acara</h2>
+                <p class="mt-4 text-slate-600">Pengalaman memimpin dan mengkoordinasikan organisasi berskala menengah hingga besar.</p>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 border-l-4 border-l-secondary">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-bold text-slate-900">Ikatan Pelajar Nahdlatul Ulama</h3>
+                        <span class="text-sm font-medium text-secondary bg-blue-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2018-2024</span>
+                    </div>
+                    <p class="text-slate-600">Menjadi Wakil Ketua bidang kaderisasi dan Sekretaris pada tingkatan Kecamatan dan Wakil Ketua Bidang IT pada tingkat Kabupaten/kota</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 border-l-4 border-l-secondary">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-bold text-slate-900">Ikatan Warga Kaum Peduli</h3>
+                        <span class="text-sm font-medium text-secondary bg-blue-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2022 - Sekarang</span>
+                    </div>
+                    <p class="text-slate-600">Menjadi Pengurus pada organisasi kemasyaratan IWAK-P</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 border-l-4 border-l-secondary">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-bold text-slate-900">Karang Taruna</h3>
+                        <span class="text-sm font-medium text-secondary bg-blue-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2022 - Sekarang</span>
+                    </div>
+                    <p class="text-slate-600">Menjadi Pengurus pada organisasi Karang Taruna Desa Gebangudik</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 border-l-4 border-l-secondary">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-bold text-slate-900">Panitia Pemungutan Suara</h3>
+                        <span class="text-sm font-medium text-secondary bg-blue-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">2023-2024</span>
+                    </div>
+                    <p class="text-slate-600">Menjadi Anggota PPS bidang Data Informasi dan Partisipasi Masyarakat pada Pemilu 2024 dan Pilkada Serentak</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-slate-900 text-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Proyek Sistem Informasi</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-800 rounded-xl overflow-hidden hover:-translate-y-1 transition duration-300">
+                    <div class="h-48 bg-slate-700 p-6 flex items-center justify-center">
+                        <span class="text-4xl">💻</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Manajemen Server Extraordinary CBT</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Menganalisis kebutuhan resource (CPU/RAM) dan mengonfigurasi server VPS untuk menangani ujian serentak yang diakses oleh 650+ siswa (concurrent users) tanpa kendala *downtime*.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded">Server Admin</span>
+                            <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded">CBT App</span>
+                            <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded">VPS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-xl overflow-hidden hover:-translate-y-1 transition duration-300">
+                    <div class="h-48 bg-slate-700 p-6 flex items-center justify-center">
+                        <span class="text-4xl">📚</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Website Sekolah Digital & CMS</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            Merancang dan mengembangkan purwarupa Sistem Informasi Manajemen Sekolah (CMS) dan Website Digital menggunakan framework PHP untuk memudahkan pencatatan arsip akademik secara *paperless*.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded">PHP</span>
+                            <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded">CodeIgniter</span>
+                            <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-12 bg-white border-t border-slate-200 text-center px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Mari Berkolaborasi!</h2>
+            <p class="text-slate-600 mb-8">Tertarik untuk mendiskusikan implementasi IT di sekolah, berbagi pengalaman organisasi, atau tawaran pengembangan sistem?</p>
+            <a href="mailto:emailanda@example.com" class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-900 transition mb-12">Kirim Email</a>
+            
+            <p class="text-sm text-slate-500">
+                &copy; 2026 Bagus Ibrohim. Didesain dengan penuh semangat untuk Pendidikan Indonesia.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
